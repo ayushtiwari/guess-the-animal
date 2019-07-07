@@ -1,5 +1,7 @@
 venv*
 venv/
+vgg_venv*
+vgg_venv/
 .DS_Store
 .env
 .flaskenv

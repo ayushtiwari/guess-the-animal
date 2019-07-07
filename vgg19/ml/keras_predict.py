@@ -11,7 +11,7 @@ from keras.preprocessing.image import img_to_array
 
 
 def get_model():
-    model = load_model('vgg16/ml/vgg16_fine_tuned.h5')
+    model = load_model('vgg19/ml/vgg16_fine_tuned.h5')
     return model
 
 
@@ -19,7 +19,7 @@ def preprocess_image(image, target_size):
     if image.mode != "RGB":
         image = image.convert("RGB")
     image = image.resize(target_size)
-    image = img_to_array(image)
+    image = img_to_array(image)/255.0
     image = np.expand_dims(image, axis=0)
     return image
 

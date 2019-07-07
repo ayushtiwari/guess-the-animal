@@ -1,6 +1,6 @@
 import os
 from flask_migrate import Migrate, MigrateCommand
-from vgg16 import create_app, db
+from vgg19 import create_app, db
 from flask_script import Manager, Shell
 
 app = create_app(os.getenv('FLASK_CONFIG') or 'default')

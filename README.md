@@ -30,7 +30,7 @@ pip install -r requirements.txt
 
 In addition to these you will require vgg19 weights fine tuned for classifying cats and dogs.
 Weights can be downloaded from [here](https://drive.google.com/open?id=1OS-jRgfnhaB9vm5OfGJgPwipaoUDUkH3).
-
+Place the weights (.h5 file) at vgg19/ml/
 
 
 ## Built With
